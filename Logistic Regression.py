@@ -2,7 +2,7 @@
 """
 Created on Thu Aug  8 14:31:00 2019
 
-@author: HA5035615
+
 """
 
 import numpy as np
