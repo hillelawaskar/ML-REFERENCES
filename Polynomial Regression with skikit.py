@@ -2,7 +2,7 @@
 """
 Created on Tue Aug  6 15:46:13 2019
 
-@author: HA5035615
+
 
 
 # if you see this data you will find that the actuals start deviating from predictions on higher values ; so we need to 
