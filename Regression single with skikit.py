@@ -2,7 +2,6 @@
 """
 Created on Tue Aug  6 13:19:22 2019
 
-@author: HA5035615
 """
 
 from sklearn import linear_model
