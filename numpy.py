@@ -2,7 +2,7 @@
 """
 Created on Wed Aug  7 14:36:57 2019
 
-@author: HA5035615
+
 """
 
 ##########Numpy 
