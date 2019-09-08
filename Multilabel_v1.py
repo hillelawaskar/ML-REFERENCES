@@ -2,7 +2,7 @@
 """
 Created on Thu Sep  5 17:36:40 2019
 
-@author: HA5035615
+@author: Hillel
 """
 
 import pandas as pd
@@ -19,9 +19,9 @@ from sklearn.metrics import accuracy_score
 #import matplotlib.pyplot as plt
 
 
-tags = pd.read_csv(r'D:\Others\PythonCode\MLinAction\datamulti\Tags.csv')
+tags = pd.read_csv(r'D:\Data\MLinAction\MultiLabel\Tags.csv')
 #queries = pd.read_csv(r'D:\Others\PythonCode\MLinAction\datamulti\Questions.csv', header=0, skiprows=range(1, 999), nrows=1000)
-queries = pd.read_csv(r'D:\Others\PythonCode\MLinAction\datamulti\Questions.csv', header=0, nrows=10000)
+queries = pd.read_csv(r'D:\Data\MLinAction\MultiLabel\Questions.csv', header=0, nrows=20000)
 
 tags['Tag'].describe()
 #count        3750862
@@ -93,8 +93,8 @@ for query in queries.iterrows():
               
 
 #Save the data 
-df.to_csv(r'D:\Others\PythonCode\MLinAction\datamulti\tagged_data10000.csv')      # save df         
-#df = pd.read_csv(r'D:\Others\PythonCode\MLinAction\datamulti\tagged_data10000.csv',encoding="ISO-8859-1",  index_col=[0])
+df.to_csv(r'D:\Data\MLinAction\MultiLabel\tagged_data20000.csv')      # save df         
+#df = pd.read_csv(r'D:\Data\MLinAction\MultiLabel\tagged_data20000.csv',encoding="ISO-8859-1",  index_col=[0])
 
 # No Need to run below statement now as we have transformed the data to contain others 
 df.dropna(axis = 1, how ='all', inplace = True)    # remove all columns that have Nan in all rows i.e. the tags are not used 
